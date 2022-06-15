@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32 (1).png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main>
+            <section class="text">
+                <h1>Learn to code by watching others</h1>
+                <p>
+                    See how experienced developers solve problems in real time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers thing is valuable.
+                </p>
+            </section>
+            <section class="form-section">
+                <button>
+                    <strong>Try it free 7 days</strong
+                    ><span> then $20/mo. thereafter</span>
+                </button>
+                <form action="">
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            name="fname"
+                            placeholder="First Name"
+                            id="fname"
+                            required
+                        />
+                        <img src="./images/icon-error.svg" alt="Error icon" />
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            name="lname"
+                            placeholder="Last Name"
+                            id="lname"
+                            tabindex="-1"
+                            required
+                        />
+                        <img src="./images/icon-error.svg" alt="Error icon" />
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            id="email"
+                            tabindex="-1"
+                            required
+                        />
+                        <img src="./images/icon-error.svg" alt="Error icon" />
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            id="password"
+                            tabindex="-1"
+                            required
+                        />
+                        <img src="./images/icon-error.svg" alt="Error icon" />
+                    </div>
+                    <div>
+                        <input
+                            type="submit"
+                            name="submit"
+                            value="CLAIM YOUR FREE TRIAL"
+                            id="submit"
+                        />
+                    </div>
+                    <p>
+                        By clicking the button, you are agreeing to our
+                        <span>Terms and Services</span>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
