@@ -29,9 +29,6 @@ main {
 }
 
 @media (max-width: 900px) {
-    body {
-        background: hsl(0, 100%, 74%) url(./images/bg-intro-mobile.png);
-    }
 }
 
 .text {
@@ -101,6 +98,7 @@ input {
 }
 
 input::placeholder {
+    font-family: "Poppins", sans-serif;
     color: gray;
 }
 
@@ -149,9 +147,14 @@ form > p > span {
     color: var(--primary-red);
 }
 
-@media (max-width: 100px) {
+@media (max-width: 900px) {
+    body {
+        background: hsl(0, 100%, 74%) url(./images/bg-intro-mobile.png);
+    }
+
     .form-section {
         width: 100%;
+        margin-bottom: 4rem;
     }
 }
 
