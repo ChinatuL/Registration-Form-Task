@@ -28,9 +28,6 @@ main {
     margin: 0 10vw;
 }
 
-@media (max-width: 900px) {
-}
-
 .text {
     display: flex;
     flex-direction: column;
@@ -86,24 +83,9 @@ input {
     outline-style: none;
 }
 
-.input-field {
-    position: relative;
-}
-
-.input-field > img {
-    display: none;
-    position: absolute;
-    right: 1.5rem;
-    top: 1rem;
-}
-
 input::placeholder {
     font-family: "Poppins", sans-serif;
     color: gray;
-}
-
-input:hover {
-    border: 1px solid var(--primary-red);
 }
 
 input[type="email"]:focus,
@@ -112,16 +94,23 @@ input[type="password"]:focus {
     border: 1px solid var(--neutral-dark-blue);
 }
 
-input[type="email"]:hover + img,
-input[type="text"]:hover + img,
-input[type="password"]:hover + img {
-    display: block;
+.error-message {
+    display: none;
+    font-size: 13px;
+    font-style: italic;
 }
 
-input[type="email"]:focus + img,
-input[type="text"]:focus + img,
-input[type="password"]:focus + img {
-    display: none;
+input:not([type="submit"]):focus:invalid {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    border: 1px solid var(--primary-red);
+    background-position: 335px 10px;
+}
+
+input:not([type="submit"]):focus:invalid + p {
+    color: var(--primary-red);
+    text-align: right;
+    display: block;
 }
 
 #submit {
